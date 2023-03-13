@@ -181,15 +181,16 @@
     </xs:simpleType>
   </xs:element>
   <xs:element name="PossibleIntents">
-    <xs:simpleType>
+    <xs:complexType>
 	    <xs:annotation>
 		    <xs:documentation>List of IntentRecord.</xs:documentation>
 	    </xs:annotation>
-	    <xs:list itemType="IntentRecordType"/>	
-    </xs:simpleType>
+	    <xs:sequence>
+        <xs:element name="IntentRecordType" type="IntentRecordType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
   </xs:element>
-  <xs:element name="IntentRecordType">  
-    <xs:complexType>
+  <xs:complexType name="IntentRecordType">
       <xs:annotation>
         <xs:documentation>The IntentRecordType is a new datatype defined by AI-ARC project for the Anomaly Prediction service.</xs:documentation>
       </xs:annotation>
@@ -199,7 +200,6 @@
         <xs:element name="IntentExplanation" type="xs:string" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
-  </xs:element>
   <xs:element name="IntentType">
     <xs:simpleType>
 	    <xs:annotation>
