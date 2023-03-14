@@ -6,7 +6,7 @@
             elementFormDefault="qualified"
             xmlns:ves="https://raw.githubusercontent.com/lisshernandez/DMTest/main/VesselPrediction"
  			      targetNamespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main/VesselPrediction">
-  <!-- <xs:element name="VesselPrediction"> -->
+  <!-- VesselPrediction -->
     <xs:complexType name="VesselPrediction">
       <xs:annotation>
         <xs:documentation>The class VesselPrediction is a new class defined by AI-ARC project. It's a sub-class of the class Vessel and is related to the vessel traffic prediction service</xs:documentation>
@@ -17,5 +17,4 @@
         <xs:element name="PredictionTime" type="xs:dateTime" minOccurs="0" />
       </xs:sequence>
     </xs:complexType>
-  <!-- </xs:element> -->
 </xs:schema>

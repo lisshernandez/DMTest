@@ -6,7 +6,7 @@
             elementFormDefault="qualified" 
             xmlns:sur="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Surveillance" 
             targetNamespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Surveillance">
-  <!--<xs:element name="Surveillance">-->
+  <!-- Surveillance -->
     <xs:complexType name="Surveillance">
       <xs:annotation>
         <xs:documentation>The class AIArcSurveillance is a new class defined by AI-ARC project.</xs:documentation>
@@ -16,8 +16,7 @@
         <xs:element name="SurveillanceType" type="sur:SurveillanceDataType" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
-  <!--</xs:element>-->
-  <!--<xs:element name="SurveillanceDataType">-->
+  <!-- SurveillanceDataType -->
     <xs:simpleType name="SurveillanceDataType">
       <xs:annotation>
         <xs:documentation>This enumeration presents the different types of surveillance defined by AI-ARC project.</xs:documentation>
@@ -50,5 +49,4 @@
         </xs:enumeration>		
       </xs:restriction>
     </xs:simpleType>
-  <!--</xs:element>-->
 </xs:schema>

@@ -2,8 +2,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:own="http://example.com/myschema"
             targetNamespace="http://example.com/myschema"
-            xmlns:sur="https://raw.githubusercontent.com/lisshernandez/DMTest/main" >
-<xs:import namespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main" schemaLocation="Surveillance-copy.xsd" />          
+            xmlns:sur="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Surveillance" >
+<xs:import namespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Surveillance" schemaLocation="Surveillance-copy.xsd" />          
     <xs:element name="project" type="own:Model">
         <xs:annotation>
             <xs:documentation source="version">3.0.0+</xs:documentation>

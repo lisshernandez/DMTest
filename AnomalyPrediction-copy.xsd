@@ -6,7 +6,7 @@
             elementFormDefault="qualified"
             xmlns:anom="https://raw.githubusercontent.com/lisshernandez/DMTest/main/AnomalyPrediction"
  			      targetNamespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main/AnomalyPrediction">
-  <!--<xs:element name="AnomalyPrediction">-->
+    <!-- AnomalyPrediction -->
     <xs:complexType name="AnomalyPrediction">
       <xs:annotation>
         <xs:documentation>The class AnomalyPrediction is a new class defined by AI-ARC project.</xs:documentation>
@@ -21,8 +21,7 @@
         <xs:element name="PossibleIntents" type="anom:PossibleIntentsType" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
-  <!--</xs:element>-->
-  <!-- <xs:element name="AIArcAnomalyType"> -->
+    <!-- AIArcAnomalyType -->
     <xs:simpleType name="AIArcAnomalyType">
       <xs:annotation>
         <xs:documentation>Specific maritime anomaly type to fit use cases of the AI-ARC project.</xs:documentation>
@@ -65,8 +64,7 @@
         </xs:enumeration>	
 	    </xs:restriction>
     </xs:simpleType>
-  <!-- </xs:element> -->
-  <!-- <xs:element name="PriorityLevel"> -->
+    <!-- PriorityLevelType -->
     <xs:simpleType name="PriorityLevelType">
       <xs:annotation>
         <xs:documentation>The qualitative level of priority associated with the incident, anomaly, or risk defined by the AI-ARC project.</xs:documentation>
@@ -104,8 +102,7 @@
         </xs:enumeration>	
       </xs:restriction>
     </xs:simpleType>
-  <!-- </xs:element> -->
-  <!-- <xs:element name="Confidence"> -->
+  <!-- ConfidenceType -->
     <xs:simpleType name="ConfidenceType">
       <xs:annotation>
         <xs:documentation>Probability of confidence value for Anomalies, Risk or Incidents. The values are the same as Credibility in the Admiralty Code system used by military forces.</xs:documentation>
@@ -143,8 +140,7 @@
         </xs:enumeration>	
       </xs:restriction>
     </xs:simpleType>
-  <!-- </xs:element> -->
-  <!-- <xs:element name="SourceReliabilityLevel"> -->
+  <!-- SourceReliabilityLevelType -->
     <xs:simpleType name="SourceReliabilityLevelType">
       <xs:annotation>
         <xs:documentation>This enumeration provides a quantitative evaluation of the reliability level of the information that is provided. The values are the same as the Reliability in the Admiralty Code system used by military forces.</xs:documentation>
@@ -182,8 +178,7 @@
         </xs:enumeration>	
       </xs:restriction>
     </xs:simpleType>
-  <!-- </xs:element> -->
-  <!-- <xs:element name="PossibleIntents"> -->
+  <!-- PossibleIntentsType -->
     <xs:complexType name="PossibleIntentsType">
 	    <xs:annotation>
 		    <xs:documentation>List of IntentRecord.</xs:documentation>
@@ -192,7 +187,7 @@
         <xs:element name="IntentRecord" type="anom:IntentRecordType" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
-  <!-- </xs:element> -->
+  <!-- IntentRecordType -->
   <xs:complexType name="IntentRecordType">
       <xs:annotation>
         <xs:documentation>The IntentRecordType is a new datatype defined by AI-ARC project for the Anomaly Prediction service.</xs:documentation>
@@ -203,7 +198,7 @@
         <xs:element name="IntentExplanation" type="xs:string" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
-  <!-- <xs:element name="IntentType"> -->
+  <!-- IntentDataType -->
     <xs:simpleType name="IntentDataType">
 	    <xs:annotation>
 		    <xs:documentation>...</xs:documentation>
@@ -236,5 +231,4 @@
         </xs:enumeration>	
       </xs:restriction>
     </xs:simpleType>
-  <!-- </xs:element> -->
 </xs:schema>

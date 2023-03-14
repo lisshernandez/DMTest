@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<own:project xmlns:own="http://example.com/myschema"
+             xmlns:sur="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Surveillance"
+             xsi:schemaLocation="http://example.com/myschema ./prueba.xsd"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>
+        <sur:Name></sur:Name>
+        <sur:SurveillanceType>No fishing</sur:SurveillanceType>
+    </modelVersion>
+</own:project>

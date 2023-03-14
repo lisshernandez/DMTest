@@ -6,7 +6,7 @@
 			elementFormDefault="qualified"
 			xmlns:rel="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Reliability"
  			targetNamespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main/Reliability">
- <!-- <xs:element name="Reliability"> -->
+ <!-- Reliability -->
     <xs:complexType name="Reliability">
 		<xs:annotation>
 			<xs:documentation>The class Reliability is a new class defined by AI-ARC project, based on data involved in the Reliability Assessment service.</xs:documentation>
@@ -18,8 +18,7 @@
 			<xs:element name="ReliabilityMetrics" type="rel:ReliabilityMetricsType" minOccurs="0"/> 
 		</xs:sequence>
     </xs:complexType>
- <!-- </xs:element> -->
- <!-- <xs:element name="InvolvedServiceDataType"> -->
+ <!-- InvolvedServiceDataType -->
 	<xs:complexType name="InvolvedServiceDataType">
 		<xs:sequence>
 			<xs:element name="Identifier" type="xs:string" minOccurs="0"/> <!--Reference to the AI-ARC service analized by the RA service. The reference and link is made through the UniqueIdentifier of the service message.-->
@@ -32,8 +31,7 @@
 			<xs:element name="ReferenceURI" type="xs:anyURI" minOccurs="0"/> <!--e.g. the API of a ML model-->
 		</xs:sequence>
 	</xs:complexType>
- <!-- </xs:element> -->
- <!-- <xs:element name="ReliabilityMetrics"> -->
+ <!-- ReliabilityMetricsType -->
 	<xs:complexType name="ReliabilityMetricsType">
 		<xs:sequence>
 			<xs:element name="S_train" type="xs:double" minOccurs="0"/> <!--Metric value for the reliability score. e.g. 0.63-->
@@ -46,5 +44,4 @@
 			<xs:element name="OtherDescription" type="xs:string" minOccurs="0"/> <!--Explanation of metric-->
 		</xs:sequence>
 	</xs:complexType>
- <!-- </xs:element> -->
 </xs:schema>
