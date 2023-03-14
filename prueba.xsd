@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:own="http://example.com/myschema"
+            targetNamespace="http://example.com/myschema"
+            xmlns:sur="https://raw.githubusercontent.com/lisshernandez/DMTest/main" >
+<xs:import namespace="https://raw.githubusercontent.com/lisshernandez/DMTest/main" schemaLocation="Surveillance-copy.xsd" />          
+    <xs:element name="project" type="own:Model">
+        <xs:annotation>
+            <xs:documentation source="version">3.0.0+</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="Model">
+        <xs:sequence>
+        <xs:element minOccurs="0" name="modelVersion" type="sur:Surveillance">
+            <xs:annotation>
+              <xs:documentation source="version">4.0.0+</xs:documentation>
+              <xs:documentation source="description">Declares to which version of project descriptor this POM conforms.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
